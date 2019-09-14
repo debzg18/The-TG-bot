@@ -12,9 +12,9 @@ async def _(event):
     animation_ttl = range(0, 16)
     input_str = event.pattern_match.group(1)
     if input_str == "repo":
-        await event.edit("Click [here](https://github.com/Priyam005/TelegramUserBot/) to goto the custom github repo.")
+        await event.edit("Click [here](https://github.com/Priyam005/The-TG-bot/) to goto the custom github repo.")
     elif input_str == "deploy":
-        await event.edit("Click [here](https://dashboard.heroku.com/apps/userbot-telegram/deploy/github) to goto the heroku deploy page.")
+        await event.edit("Click [here](https://dashboard.heroku.com/apps/the-tg-bot/deploy/github) to goto the heroku deploy page.")
     elif input_str == "mf":
         await event.edit("""
 ......................................../´¯/) 
