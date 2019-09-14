@@ -69,7 +69,7 @@ async def _(event):
 """)
     elif input_str == "fek":
         await event.edit("""
-╰U╯\n\n(‿ˠ‿)
+╰U╯\n(‿ˠ‿)
 """)
     elif input_str == "ded":
         await event.edit("""
