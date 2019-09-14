@@ -85,7 +85,7 @@ async def _(event):
 """)
     elif input_str == "packs":
         await event.edit("""
-Your 1st sticker pack can be found [here](https://t.me/addstickers/Uniborg_Pack_843901469)\n\nYour 2nd sticker pack can be found [here](https://t.me/addstickers/Uniborg_Pack2_843901469)\n\nYour 3rd sticker pack can be found [here](https://t.me/addstickers/Uniborg_Pack3_843901469)\n\nYour animated sticker pack can be found [here](https://t.me/addstickers/Uni_Borgpack_843901469_as)\n\nYour 2nd animated sticker pack can be found [here](https://t.me/addstickers/Uni_Borg_Pack2_843901469_as)
+Your 1st sticker pack can be found [here](https://t.me/addstickers/Uniborg_Pack_843901469)\nYour 2nd sticker pack can be found [here](https://t.me/addstickers/Uniborg_Pack2_843901469)\nYour 3rd sticker pack can be found [here](https://t.me/addstickers/Uniborg_Pack3_843901469)\nYour animated sticker pack can be found [here](https://t.me/addstickers/Uni_Borgpack_843901469_as)\nYour 2nd animated sticker pack can be found [here](https://t.me/addstickers/Uni_Borg_Pack2_843901469_as)
 """)
     else:
         await event.edit("variable not defined.")
