@@ -4,6 +4,10 @@ from telethon import events
 from telethon.tl import functions, types
 from uniborg.util import admin_cmd
 
+deploylink = Config.HEROKU_LINK
+repolink = Config.REPO_LINK
+packs = Config.PACKS_CONTENT
+
 @borg.on(admin_cmd(pattern="print ?(.*)"))
 async def _(event):
     if event.fwd_from:
@@ -12,9 +16,9 @@ async def _(event):
     animation_ttl = range(0, 16)
     input_str = event.pattern_match.group(1)
     if input_str == "repo":
-        await event.edit("Click [here](https://github.com/Priyam005/The-TG-bot/) to goto the custom github repo.")
+        await event.edit("Click [here](" + repolink + ") to goto the custom github repo.")
     elif input_str == "deploy":
-        await event.edit("Click [here](https://dashboard.heroku.com/apps/the-tg-bot/deploy/github) to goto the heroku deploy page.")
+        await event.edit("Click [here](" + deploylink + ") to goto the heroku deploy page.")
     elif input_str == "mf":
         await event.edit("""
 ......................................../´¯/) 
@@ -84,8 +88,6 @@ async def _(event):
 ( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)
 """)
     elif input_str == "packs":
-        await event.edit("""
-Your 1st sticker pack can be found [here](https://t.me/addstickers/Uniborg_Pack_843901469)\nYour 2nd sticker pack can be found [here](https://t.me/addstickers/Uniborg_Pack2_843901469)\nYour 3rd sticker pack can be found [here](https://t.me/addstickers/Uniborg_Pack3_843901469)\nYour animated sticker pack can be found [here](https://t.me/addstickers/Uni_Borgpack_843901469_as)\nYour 2nd animated sticker pack can be found [here](https://t.me/addstickers/Uni_Borg_Pack2_843901469_as)
-""")
+        await event.edit(packs)
     else:
         await event.edit("variable not defined.")
